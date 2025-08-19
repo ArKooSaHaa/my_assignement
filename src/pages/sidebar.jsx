@@ -49,11 +49,17 @@ const Sidebar = ({ activeMenu, setActiveMenu }) => {
 
       <div className="sidebar-footer">
         <div className={`user-info ${isCollapsed ? 'collapsed' : ''}`}>
-          <div className="user-avatar">JD</div>
-          <div className={`user-details ${isCollapsed ? 'hidden' : ''}`}>
-            <p className="user-name">John Doe</p>
-            <p className="user-status">Online</p>
-          </div>
+          <div className="user-avatar">AS</div>
+
+          {/* Only show details when not collapsed */}
+          {!isCollapsed && (
+            <div className="user-details">
+<p className="user-name">
+  <span style={{ color: "green" }}>⬤</span> Arko Saha
+</p>
+              <p className="user-status">Online</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
