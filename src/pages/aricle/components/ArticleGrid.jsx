@@ -3,15 +3,16 @@ import styles from '../styles.jsx';
 
 const getCategoryColor = (category) => {
   const colors = {
-    'Technology': '#111',
-    'Economy': '#0a4664ff',
-    'Culture': '#6f42c1',
-    'Tourism': '#17a2b8',
-    'Sports': '#fd7e14',
-    'Environment': '#877111ff',
-    'Infrastructure': '#6c757d',
-    'Industry': '#dc3545',
-    'Education': '#e83e8c'
+    'Technology': '#333',               // Slightly darker
+    'Economy': '#084c5a',               // Changed to a darker shade
+    'Culture': '#7f4bc7',               // Lighter shade of purple
+    'Tourism': '#1e8a9f',               // Adjusted to a softer blue
+    'Sports': '#f56b00',                // Darker orange
+    'Environment': '#7a6211',           // Slightly muted greenish-brown
+    'Infrastructure': '#5e6366',        // Darker gray
+    'Industry': '#e23b45',              // Darker red
+    'Education': '#d93f8a'              // Slightly darker pink
+
   };
   return colors[category] || '#333';
 };
