@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './pages/sidebar';
 import './App.css';
+import ProfilePage from './pages/profile.jsx/profilepage';
 
 const App = () => {
   const [activeMenu, setActiveMenu] = useState('profile');
@@ -9,10 +10,7 @@ const App = () => {
     switch(activeMenu) {
       case 'profile':
         return (
-          <div className="content-section">
-              <h3>profile</h3>
-
-          </div>
+            <ProfilePage/>
         );
       case 'articles':
         return (
