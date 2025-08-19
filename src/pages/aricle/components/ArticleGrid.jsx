@@ -3,15 +3,15 @@ import styles from '../styles.jsx';
 
 const getCategoryColor = (category) => {
   const colors = {
-    'Technology': '#333',               // Slightly darker
-    'Economy': '#084c5a',               // Changed to a darker shade
-    'Culture': '#7f4bc7',               // Lighter shade of purple
-    'Tourism': '#1e8a9f',               // Adjusted to a softer blue
-    'Sports': '#f56b00',                // Darker orange
-    'Environment': '#7a6211',           // Slightly muted greenish-brown
-    'Infrastructure': '#5e6366',        // Darker gray
-    'Industry': '#e23b45',              // Darker red
-    'Education': '#d93f8a'              // Slightly darker pink
+    'Technology': '#333',               
+    'Economy': '#084c5a',               
+    'Culture': '#7f4bc7',               
+    'Tourism': '#1e8a9f',               
+    'Sports': '#f56b00',                
+    'Environment': '#7a6211',           
+    'Infrastructure': '#5e6366',      
+    'Industry': '#e23b45',              
+    'Education': '#d93f8a'              
 
   };
   return colors[category] || '#333';
